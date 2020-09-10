@@ -1,0 +1,31 @@
+.book-list-item {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__author {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    &::before {
+      content: '- ',
+    }
+  }
+  &__img {
+    margin-right: 10px;
+    img {
+      width: 100px;
+      border-radius: 10px;
+      border: 1px solid #000;
+    }
+  }
+  &__price {
+    &::before {
+      content: '$'
+    }
+  }
+}
