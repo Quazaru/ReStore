@@ -11,8 +11,6 @@ import { BookStoreServiceProvider } from './components/BookStoreService-context/
 import './assets/styles/style.scss';
 
 
-import ErrorIndicator from './components/ErrorIndicator/ErrorIndicator.jsx';
-
 const bookstoreService = new BookStoreService(); 
 
 ReactDOM.render(

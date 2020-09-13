@@ -1,0 +1,24 @@
+.shopping-cart-table {
+  table {
+    td, th {
+      margin: 5px;
+      padding: 15px;
+      text-align: center;
+      border-right: 1px solid #f0f0f0;
+      button {
+        margin: 5px;
+      }
+    }
+  }
+  .cart-total {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  tr {
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+  }
+}

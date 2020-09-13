@@ -6,11 +6,12 @@ class ErrorBoundary extends React.Component {
     super(props);
     this.state = {
       hasError: false,
+      errorMessage: null,
     }
   }
 
-  componentDidCatch() {
-    this.setState({hasError: true});
+  componentDidCatch(error) {
+    this.setState({hasError: true, errorMessage: error});
   }
 
   render() {
@@ -18,7 +19,7 @@ class ErrorBoundary extends React.Component {
     const content = this.props.children;
     if(hasError) {
       return (
-        <ErrorIndicator />
+        <ErrorIndicator message={this.state.errorMessage} />
       )
     }
     return content;
