@@ -5,14 +5,14 @@ export default class BookStoreService {
       {
         id: 1,
         img: 'https://previews.123rf.com/images/sumkinn/sumkinn1502/sumkinn150200122/36556060-icon-book-with-bookmark-minimal-outline-for-web-and-mobile-applications.jpg',
-        price: '200',
+        price: 200,
         title: 'Магия утра',
         author: 'Хэл Элрод',
       },
       {
         id: 2,
         img: 'https://previews.123rf.com/images/sumkinn/sumkinn1502/sumkinn150200122/36556060-icon-book-with-bookmark-minimal-outline-for-web-and-mobile-applications.jpg',
-        price: '200',
+        price: 150,
         title: '16 законов успеха',
         author: 'Наполеон Хилл',
       }
