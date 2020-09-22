@@ -1,6 +1,7 @@
 import React from 'react';
 import './ShopHeader.scss';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux'
 
 const ShopHeader = ({itemsCount, total}) => {
   return (
@@ -16,4 +17,11 @@ const ShopHeader = ({itemsCount, total}) => {
   )
 }
 
-export default ShopHeader;
+const mapStateToProps = (state) => {
+  return {
+    itemsCount: state.cart.count,
+    total: state.cart.totalSum,
+  }
+}
+
+export default connect(mapStateToProps)(ShopHeader);

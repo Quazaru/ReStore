@@ -5,7 +5,6 @@ import ShoppingCartTable from '../ShoppingCartTable/ShoppingCartTable.jsx';
 const HomePage = () => (
   <> 
     <BookList />
-    <ShoppingCartTable total={122}/>
   </>
 );
 
